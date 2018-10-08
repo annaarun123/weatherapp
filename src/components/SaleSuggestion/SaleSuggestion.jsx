@@ -35,7 +35,9 @@ export default class SaleSuggestion extends Component {
   }
 }
 
-const rainyOrderedWeatherLabel = ["Thunderstorms", "Rainy", "Cloudy", "Mostly Cloudy", "Partly Cloudy", "Sunny"];
+const rainyOrderedWeatherLabel = [
+  "Thunderstorms", "Rainy", "Rain", "Scattered Showers", "Cloudy", "Mostly Cloudy", "Partly Cloudy", "Sunny"
+];
 
 const bestDayToSellUmbrella = (forecast) => {
   let bestDayForUmbrella = '';

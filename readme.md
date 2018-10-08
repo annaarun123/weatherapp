@@ -6,10 +6,12 @@
 
 ### Assumptions
 
-## Assumption #1
+1. Assumption #1
+
 Best day to sell jacket is the day with the lowest `low`.
 
-## Assumption #2
+2. Assumption #2
+
 Looks up a preset label array of values such as "Rainy", "Mostly Cloudy", "Thunderstorms", etc,.. in the predfined order of higher rain chances
 
 

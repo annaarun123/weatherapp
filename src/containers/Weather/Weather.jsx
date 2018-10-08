@@ -62,7 +62,6 @@ const mapDispatchToProps = dispatch => ({
 
 Weather.propTypes = {
   getForecast: PropTypes.func,
-  dispatch: PropTypes.func.isRequired
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Weather);

@@ -18,14 +18,18 @@ export default class SaleSuggestion extends Component {
     
     return (
       <div className={styles.salesuggestion}>
+        { bestDayForJacket &&
         <div className={styles.suggestionList}>
           Jacket sale may be a good idea on 
           <span className={styles.suggestionDay}>{ bestDay(bestDayForJacket) }</span>
         </div>
+        }
+        { bestDayForUmbrella &&
         <div className={styles.suggestionList}>
           You might be better of selling Umbrella on 
           <span className={styles.suggestionDay}>{ bestDay(bestDayForUmbrella) }</span>
         </div>
+        }
       </div>
     );
   }

@@ -1,17 +1,20 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import { Provider } from 'react-redux';
 
 import App from '../src/App';
-import HelloWorld from '../src/components/hello-world';
+import Weather from '../src/containers/Weather/Weather';
+import configureStore from '../src/configureStore.js';
 
 describe('<App />', () => {
-  const wrap = mount(<App />);
+  const store = configureStore()
+  const wrap = mount(<Provider store={store}><App /></Provider>);
 
   it('renders', () => {
     expect(wrap.find(App).exists()).toBe(true);
   });
 
-  it('contains HelloWorld component', () => {
-    expect(wrap.find(HelloWorld).exists()).toBe(true);
+  it('contains Weather container', () => {
+    expect(wrap.find(Weather).exists()).toBe(true);
   });
 });

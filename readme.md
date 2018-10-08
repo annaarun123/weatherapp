@@ -4,6 +4,21 @@
 
 > Uses Yahoo Weather API
 
+### How it works
+
+- Accepts a comma separated city name and state (or country) as text input.
+- When user clicks `Forecast` button, invokes Yahoo weather API
+- Slices first 5 days from the 10 days returned from Yahoo
+- Displays the forecasted weather in a table
+- Decides and suggests best day to sell jacket based on the assumption #1
+Assumption #1
+The day with the lowest low.
+- Decides and suggests best day to sell umbrella based on the assumption #2
+Assumption #2
+Looks up a preset label array of values such as "Rainy", "Mostly Cloudy", "Thunderstorms", etc,.. in the predfined order of higher rain chances
+- Suggest the best day for umbrella as the first occurrence of a day with higher rain chances.
+
+
 ### Project structure
 
 ````
@@ -62,8 +77,6 @@ webpack
 * [Lodash](https://github.com/lodash/lodash)
 * [Jest](https://github.com/facebook/jest) [ Unit test]
 * [Enzyme](http://airbnb.io/enzyme/) for UI testing.
-* [Eslint](https://github.com/eslint/eslint/) with airbnb config
-* [Prettier](https://github.com/prettier/prettier) [ Code formatter ]
 * [Style](https://github.com/webpack-contrib/style-loader) & [CSS Loader](https://github.com/webpack-contrib/css-loader) & [SASS-loader](https://github.com/webpack-contrib/sass-loader)
 * [CSS modules](https://github.com/css-modules/css-modules) [ Isolated style based on each component ]
 * [Browsers list](https://github.com/browserslist/browserslist) [ Share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-preset-env ]

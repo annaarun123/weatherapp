@@ -4,6 +4,9 @@
 
 > Uses Yahoo Weather API
 
+![Demo Screen Recording](https://github.com/annaarun123/weatherapp/blob/master/WeatherApp_demo.webm)
+
+
 ### Assumptions
 
 1. Assumption #1

@@ -61,9 +61,12 @@ webpack
 
 3- build and bundling your resources for production `yarn build`.
 
-4- Unit testing will watch all your changes in the test files as well as create coverage folder for you. 
-`yarn test`
+4- Open the browser and navigate to `weather app` at
 
+`http://localhost:8080`
+
+5- Unit testing will watch all your changes in the test files as well as create coverage folder for you. 
+`yarn test`
 
 ### Configuration
 * Webpack Config paths based on your file structure you can go to `webpack/paths.js` and modify the source and file names based on your need.

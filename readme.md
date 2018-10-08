@@ -4,18 +4,24 @@
 
 > Uses Yahoo Weather API
 
+### Assumptions
+
+## Assumption #1
+Best day to sell jacket is the day with the lowest `low`.
+
+## Assumption #2
+Looks up a preset label array of values such as "Rainy", "Mostly Cloudy", "Thunderstorms", etc,.. in the predfined order of higher rain chances
+
+
 ### How it works
 
 - Accepts a comma separated city name and state (or country) as text input.
 - When user clicks `Forecast` button, invokes Yahoo weather API
 - Slices first 5 days from the 10 days returned from Yahoo
 - Displays the forecasted weather in a table
-- Decides and suggests best day to sell jacket based on the assumption #1
-Assumption #1
-The day with the lowest low.
-- Decides and suggests best day to sell umbrella based on the assumption #2
-Assumption #2
-Looks up a preset label array of values such as "Rainy", "Mostly Cloudy", "Thunderstorms", etc,.. in the predfined order of higher rain chances
+- Decides and suggests best day to sell jacket based on the `assumption #1`
+
+- Decides and suggests best day to sell umbrella based on the `assumption #2`
 - Suggest the best day for umbrella as the first occurrence of a day with higher rain chances.
 
 
